@@ -1,0 +1,562 @@
+/*## DEFAULT ##*/
+*{
+    box-sizing: border-box;
+}
+nav{
+    display: block;
+}
+body{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    line-height: 1;
+    width: 100%;
+    letter-spacing: 2px;
+}
+img{
+    width: 100%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+/*#### NAVBAR ####*/
+nav{
+    
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+nav ul{
+    background-color: rgba(0,0,0,0.7);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.top-nav li{
+    list-style: none;
+    float: left;
+}
+ul.top-nav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    color: #fff;
+}
+ul.top-nav li.dropDown-List{
+    display: none;
+}
+ul.top-nav li a:hover{
+    background-color: #aaa;
+    color: #000;
+}
+ul.top-nav div.search{
+    float: right;
+    margin-right: 20px;
+    margin-top: 0;
+}
+ul.top-nav input[type='text']{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: none;
+}
+ul.top-nav div.search button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+ul.top-nav div.search button:hover{
+    background-color: red;
+}
+
+
+
+
+div.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    
+    margin:auto;
+}
+div.slideshow-container div.mySlide{
+    display: none;
+}
+div.slideshow-container div.mySlide div.text{
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*The Band Section*/
+div.theBand{
+    width: 800px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin: auto ;
+    display: block;
+    text-align: center;
+}
+div.theBand h2{
+    font-family: "Segoe UI","Arial",sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+div.theBand p.opac{
+    font-size: 15px;
+    opacity: 0.6;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+div.theBand p.para{
+    text-align: justify!important;
+    margin: 10px 0 20px 0;
+}
+div.theBand div.brandContent{
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+
+
+
+/*The Tour*/
+div.tourSection{
+    background-color: #000;
+}
+div.tourSection div.tourH{
+    width: 800px;
+    margin:80px auto ;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: block;
+    text-align: center;
+}
+div.tourSection div.tourH h2{
+    font-family: "Segoe UI","Arial",sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 1.5;
+    color: white;
+    text-transform: uppercase;
+}
+div.tourSection div.tourH p.tourpara{
+    font-size: 15px;
+    opacity: 0.6;
+    margin: 15px 0;
+    line-height: 1.5;
+    color: #fff;
+}
+div.tourSection div.tourH ul{
+    color: #757575!important;
+    background-color: #fff;
+    border: 1px solid #ccc!important;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+div.tourSection div.tourH ul li{
+    display: list-item;
+    font-size: 15px;
+    line-height: 1.5;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px!important;
+}
+div.tourSection div.tourH ul li span.tag{
+    color: #fff;
+    background-color: #f44336!important;
+    margin-left: 16px!important;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+div.tourSection div.tourH ul li span.badge{
+    float: right!important;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 16px!important;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+div.tourSection div.tourH div.imgcontainer{
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+div.imgbox{
+    margin: 0 -9px;
+}
+div.imgshow{
+    padding: 0 8px;
+    margin-bottom: 16px!important;
+}
+div.imgshow img:hover{
+    opacity: 0.5;
+}
+div.img-text{
+    text-align: justify;
+    padding: 15px 16px;
+    color: #000;
+    background-color: #fff; 
+}
+div.imgshow button{
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 16px!important;
+    border: none;
+    display: inline-block;
+    padding: 13px 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0;
+}
+div.imgshow button:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+
+/*   The model Box */
+div.ticketModel{
+    display: none;
+    z-index: 4;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+div.ticketModel div.modelcontent{
+    position: relative;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2) , 0 4px 20px 0 rgba(0,0,0,0.19);
+    width: 800px;
+    margin: auto;
+    padding: 0;
+    display: block;
+    animation-name: animatetop;
+   animation-duration: 0.4s
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+div.modelcontent header.modelhead{
+    color: #fff;
+    background-color: #009688!important;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    text-align: center!important;
+    padding: 0.01em 16px;
+}
+div.modelcontent header.modelhead span{
+    color: #fff;
+    background-color: #009688!important;
+    font-size: 24px!important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+div.modelcontent header.modelhead h2{
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+    display: block;
+} 
+div.modelcontent header.modelhead h2 i{
+    margin-right: 16px!important;
+}
+div.modelcontent div.modelText{
+    padding: 0.01em 16px; 
+    background-color: #fff;
+}
+div.modelcontent div.modelText [type="text"]{
+    border: 1px solid #ccc!important;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    font: inherit;
+    margin: 0;
+}
+div.modelcontent div.modelText button.pay{
+    color: #fff;
+    font-size: 16px;
+    background-color: #009688!important;
+    float: right!important;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+div.modelcontent div.modelText button.close{
+    color: #fff;
+    font-size: 16px;
+    background-color: #f44336!important;
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+div.modelcontent div.modelText p.right{
+    float: right;
+}
+div.modelcontent div.modelText p.right a{
+    color: #2196F3!important;
+}
+
+/* The contact Box */
+div.contactbox{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+}
+div.contactbox h2{
+    text-align: center!important;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+}
+div.contactbox p.contop{
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+div.contactbox form input{
+    border: 1px solid #ccc!important;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    overflow: visible;
+    font: inherit;
+    margin: 0;
+}
+
+form button.send{
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #fff!important;
+    background-color: #000!important;
+    float: right!important;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+footer{
+    color: #000;
+    background-color: #f1f1f1!important;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+    font-size: 24px!important;
+    text-align: center;
+    opacity: 0.6;
+}
+footer i:hover{
+    cursor: pointer;
+    color: #000!important;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:768px){
+    ul.top-nav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.top-nav li a{
+        font-size: 15px;
+    }
+    ul.top-nav div.search{
+        display: none;
+    }
+    ul.top-nav li.dropDown-List{
+        float: right;
+        display: block;
+    }
+    ul.top-nav.responsive li.dropDown-List{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.top-nav.responsive{
+        position: relative;
+        background-color: rgba(0,0,0,.8);
+    }
+    ul.top-nav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.top-nav.responsive li a{
+        
+        display: block;
+        text-align: left;
+    }
+    ul.top-nav.responsive div.search{
+        display: inline;
+        float: left;
+    }
+    
+    div.slideshow-container div.mySlide div.text{
+        font-size: 10px;
+    }
+    
+    
+/*    The Band **/
+    div.theBand{
+        width:100%;
+        margin: 80px auto ;
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+    .col-4,.col-12{
+        width: 100%;
+    }
+    
+/*    The tour*/
+    div.tourSection div.tourH{
+        width:100%;
+        margin: 80px auto ;
+        padding: 64px;
+        display: block;
+        text-align: center;
+    }
+    div.ticketModel {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div.ticketModel div.modelcontent{
+        width: 100%;
+    }
+    
+    div.contactbox{
+        width:100%;
+        margin: 80px auto ;
+        padding: 20px;
+        display: block;
+    }
+    .col-6{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

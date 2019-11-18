@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Demo Web 1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script defer type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <nav id="nav-bar">
+            <ul class="top-nav" id="dropdownclick">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Band">Band</a></li>
+                <li><a href="#Tour">Tour</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Contact">More</a></li>
+                <li class="dropDown-List"><a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a></li>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </ul>
+        </nav>
+<!--        SlideShow-->
+        <div class="row" id="home">
+            <div class="col-12">
+                <div class="slideshow-container">
+                    <div class="mySlide fade">
+                        <img src="la.jpg">
+                        <div class="text">
+                            <h3>Los Angeles</h3>
+                            <p><b>We had the best time playing at Venice Beach!</b></p>
+                        </div>
+                    </div>
+                    
+                    <div class="mySlide fade">
+                        <img src="ny.jpg">
+                        <div class="text">
+                            <h3>New York</h3>
+                            <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+                        </div>
+                    </div>
+                    
+                    <div class="mySlide fade">
+                        <img src="chicago.jpg">
+                        <div class="text">
+                            <h3>Chicago</h3>
+                            <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--        The Band Section  -->
+        <div class="theBand" id="Band">
+                    <h2>The Band</h2>
+                    <p class="opac"><i>We love Music</i></p>
+                    <p class="para">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea csssssommodo consequat.</p>
+            
+            <div class="row brandContent">
+                <div class="col-4">
+                    <div class="img1">
+                        <p>Name</p>
+                        <img src="bandmember.jpg" style="width:60%">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img1">
+                        <p>Name</p>
+                        <img src="bandmember.jpg" style="width:60%">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img1">
+                        <p>Name</p>
+                        <img src="bandmember.jpg" style="width:60%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--        Tour date -->
+        
+        <div class="tourSection" id="Tour">
+            <div class="tourH">
+                <h2 class="tourh2">Tour Dates</h2>
+                <p class="tourpara"><i>Remember to book your tickets!</i></p>
+                <br>
+                <ul>
+                    <li>September<span class="tag">Sold out</span></li>
+                    <li>October<span class="tag">Sold out</span></li>
+                    <li>November<span class="badge">3</span></li>
+                </ul>
+                <div class="imgbox">
+                    <div class="row imgcontainer">
+                        <div class="col-4 imgshow">
+                            <img src="newyork.jpg" style="width: 100%">
+                            <div class="img-text">
+                                <p><b>New York</b></p>
+                                <p style="opacity: 0.6">Fri 26 Sep 2019</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="myBtn">Buy Tickects</button>
+                            </div>
+                        </div>
+                        <div class="col-4 imgshow">
+                            <img src="paris.jpg" style="width: 100%">
+                            <div class="img-text">
+                                <p><b>Paris</b></p>
+                                <p style="opacity: 0.6">Sat 27 Sep 2019</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="myBtn">Buy Tickects</button>
+                            </div>
+                        </div>
+                        <div class="col-4 imgshow">
+                            <img src="sanfran.jpg" style="width: 100%">
+                            <div class="img-text">
+                                <p><b>San Francisco</b></p>
+                                <p style="opacity: 0.6">Sun 28 Sep 2019</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="myBtn">Buy Tickects</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--        The Model Box-->
+        
+        <div class="ticketModel" id="myModel">
+            <div class="modelcontent">
+                <header class="modelhead">
+                    <span id="close2" class="modelclose">x</span>
+                    <h2><i class="fa fa-suitcase"></i>Tickets</h2>
+                </header>
+                <div class="modelText">
+                    <p><label><i class="fa fa-shopping-cart">Tickets,15$ per person</i></label></p>
+                    <input type="text" placeholder="How Many??">
+                    <p><label><i class="fa fa-user">Tickets,15$ per person</i></label></p>
+                    <input type="text" placeholder="Enter email id...">
+                    <button class="pay">Pay<i class="fa fa-check"></i></button>
+                    <button id="close1" class="close">Close<i class="fa fa-remove"></i></button>
+                    <p class="right">Need<a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+        
+<!--        The Contact Box   -->
+        <div class="contactbox" id="Contact">
+            <h2>CONTACT</h2>
+            <p class="contop"><i>Fan?Drop a note!</i></p>
+            <div class="row">
+                <div class="col-6">
+                    <p style="font-size: 20px"><i class="fa fa-map-marker" style="width: 30px"></i>Chicago , US</p>
+                    <p style="font-size: 20px"><i class="fa fa-phone" style="width: 30px"></i>Phone: +00 151515</p>
+                    <p style="font-size: 20px"><i class="fa fa-envelope" style="width:30px"></i>Email: mail@gmail.com</p>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="row" style="margin:0 -16px 8px -16px;padding: 0 8px;">
+                            <div class="col-6" style="padding: 0 8px;">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="col-6" style="padding: 0 8px;">
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row" style="margin:0 -16px 8px -16px;padding: 0 8px;">
+                            <div class="col-12" style="padding: 0 8px;">
+                                <input type="text" placeholder="Message">
+                            </div>
+                        </div>
+                        <div class="row" style="margin:0 -16px 8px -16px;padding: 0 8px;">
+                            <div class="col-12" style="padding: 0 8px;">
+                               <button class="send" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+<!--        End content -->
+        <img src="map.jpg" style="width: 100%">
+<!--        Footer section -->
+        <footer>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </footer>
+    </body>
+</html>
